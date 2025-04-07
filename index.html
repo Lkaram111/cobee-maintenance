@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COBEE - Site en construction</title>
+    <title>COBEE - Be Connected</title>
     <link rel="icon" type="image/png" href="assets/Logo_white.png" />
     <style>
       :root {
@@ -40,22 +40,29 @@
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         color: var(--primary-color);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-weight: 600;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+        color: var(--secondary-color);
+        font-weight: 400;
       }
 
       p {
         font-size: 1.2rem;
         line-height: 1.6;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         color: #94a3b8;
       }
 
       .construction-icon {
         font-size: 4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         color: var(--secondary-color);
       }
 
@@ -106,6 +113,10 @@
           font-size: 2rem;
         }
 
+        h2 {
+          font-size: 1.5rem;
+        }
+
         p {
           font-size: 1rem;
         }
@@ -120,16 +131,21 @@
     <div class="container">
       <img src="assets/Logo_white.png" alt="COBEE Logo" class="logo" id="logo">
       <div class="construction-icon">🚧</div>
-      <h1>Site en Construction</h1>
-      <p>Notre équipe travaille actuellement sur une nouvelle version de notre plateforme. Nous serons bientôt de retour avec une expérience améliorée.</p>
+      <h1>COBEE - Be Connected</h1>
+      <h2>Premier lancement de notre startup innovante</h2>
+      <p>
+        Notre équipe travaille avec passion pour vous offrir bientôt une expérience unique. C'est le lancement de COBEE, et très bientôt, on sera connectés !
+      </p>
       <div class="progress-bar">
         <div class="progress"></div>
       </div>
-      <p class="contact">Pour toute question, n'hésitez pas à nous contacter à <a href="mailto:contact@cobee.fr">contact@cobee.fr</a></p>
+      <p class="contact">
+        Pour toute question, contactez-nous à <a href="mailto:contact@cobee.fr">contact@cobee.fr</a>
+      </p>
     </div>
 
     <script>
-      // Fonction pour détecter le thème du système
+      // Fonction pour détecter le thème du système et mettre à jour le logo en conséquence
       function updateLogo() {
         const logo = document.getElementById('logo');
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
