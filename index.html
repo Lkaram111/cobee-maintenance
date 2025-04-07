@@ -147,9 +147,9 @@
       function updateLogo() {
         const logo = document.getElementById('logo');
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          logo.src = 'assets/Logo_white.png';
-        } else {
           logo.src = 'assets/Logo_black.png';
+        } else {
+          logo.src = 'assets/Logo_white.png';
         }
       }
 
