@@ -4,22 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COBEE - Site en construction</title>
-    <!-- Dernière mise à jour: 07/04/2024 -->
+    <link rel="icon" type="image/png" href="https://cobee.fr/wp-content/uploads/2023/12/COBEE-LOGO-1.png">
     <style>
         :root {
-            --primary-color: hsl(210, 100%, 50%);
-            --secondary-color: hsl(210, 40%, 96.1%);
-            --background-color: hsl(210, 40%, 98%);
-            --text-color: hsl(222.2, 47.4%, 11.2%);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --primary-color: hsl(210, 100%, 50%);
-                --secondary-color: hsl(217.2, 32.6%, 17.5%);
-                --background-color: hsl(240, 10%, 3.9%);
-                --text-color: hsl(210, 40%, 98%);
-            }
+            --primary-color: #1A9EFF;
+            --secondary-color: #00D3B0;
+            --background-color: #1e293b;
+            --text-color: #ffffff;
         }
 
         body {
@@ -43,34 +34,36 @@
         }
 
         .logo {
-            width: 200px;
+            width: 250px;
             height: auto;
             margin-bottom: 2rem;
-            filter: var(--logo-filter, none);
+            filter: brightness(0) invert(1);
         }
 
         h1 {
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 1rem;
+            font-weight: 600;
         }
 
         p {
             font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 2rem;
+            color: #94a3b8;
         }
 
         .construction-icon {
             font-size: 4rem;
             margin-bottom: 2rem;
-            color: var(--primary-color);
+            color: var(--secondary-color);
         }
 
         .progress-bar {
             width: 100%;
             height: 8px;
-            background-color: var(--secondary-color);
+            background-color: #334155;
             border-radius: 4px;
             margin: 2rem 0;
             overflow: hidden;
@@ -79,7 +72,7 @@
         .progress {
             width: 75%;
             height: 100%;
-            background: var(--primary-color);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             animation: progress 2s ease-in-out infinite;
         }
 
@@ -92,16 +85,17 @@
         .contact {
             margin-top: 2rem;
             font-size: 1rem;
-            color: var(--text-color);
+            color: #94a3b8;
         }
 
         .contact a {
             color: var(--primary-color);
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .contact a:hover {
-            text-decoration: underline;
+            color: var(--secondary-color);
         }
 
         @media (max-width: 768px) {
@@ -116,6 +110,10 @@
             p {
                 font-size: 1rem;
             }
+
+            .logo {
+                width: 200px;
+            }
         }
     </style>
 </head>
@@ -123,12 +121,12 @@
     <div class="container">
         <img src="https://cobee.fr/wp-content/uploads/2023/12/COBEE-LOGO-1.png" alt="COBEE Logo" class="logo">
         <div class="construction-icon">🚧</div>
-        <h1>Site en construction</h1>
-        <p>Nous travaillons dur pour vous offrir une expérience exceptionnelle. Notre nouveau site web sera bientôt disponible.</p>
+        <h1>Site en Construction</h1>
+        <p>Notre équipe travaille actuellement sur une nouvelle version de notre plateforme. Nous serons bientôt de retour avec une expérience améliorée.</p>
         <div class="progress-bar">
             <div class="progress"></div>
         </div>
-        <p class="contact">Pour toute question, contactez-nous à <a href="mailto:contact@cobee.fr">contact@cobee.fr</a></p>
+        <p class="contact">Pour toute question, n'hésitez pas à nous contacter à <a href="mailto:contact@cobee.fr">contact@cobee.fr</a></p>
     </div>
 </body>
 </html> 
